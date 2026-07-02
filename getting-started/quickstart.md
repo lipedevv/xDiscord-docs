@@ -2,49 +2,49 @@
 icon: rocket
 ---
 
-# Configuracao rapida
+# Quickstart
 
-Depois de instalar `xCore.jar` e `xDiscord.jar`, inicie o servidor uma vez para gerar os arquivos.
+After installing `xCore.jar` and `xDiscord.jar`, start the server once to generate the configuration files.
 
-## 1. Escolha o idioma
+## 1. Choose The Locale
 
-O idioma padrao e `en_US`. Para usar portugues:
+The default locale is `en_US`. To use Brazilian Portuguese:
 
 ```yaml
 settings:
   language: "pt_BR"
 ```
 
-Arquivo:
+File:
 
 ```text
 plugins/xDiscord/locales/en_US/config.yml
 ```
 
-Reinicie ou use `/xdiscord reload`.
+Restart the server or run `/xdiscord reload`.
 
-## 2. Configure o bot
+## 2. Configure The Bot
 
-Arquivo:
+File:
 
 ```text
-plugins/xDiscord/locales/pt_BR/discord.yml
+plugins/xDiscord/locales/en_US/discord.yml
 ```
 
-Campos principais:
+Main fields:
 
 ```yaml
 discord:
   enabled: true
-  token: "TOKEN_DO_BOT"
-  guild-id: "ID_DO_SERVIDOR"
-  invite-url: "https://discord.gg/seuservidor"
-  verified-role-id: "ID_DO_CARGO_VERIFICADO"
+  token: "BOT_TOKEN"
+  guild-id: "SERVER_ID"
+  invite-url: "https://discord.gg/yourserver"
+  verified-role-id: "VERIFIED_ROLE_ID"
 ```
 
-## 3. Configure o banco
+## 3. Configure The Database
 
-SQLite vem pronto por padrao:
+SQLite works out of the box:
 
 ```yaml
 database:
@@ -53,20 +53,20 @@ database:
     file: "data/database.db"
 ```
 
-Para MySQL, veja [Banco de dados](../configuration/database.md).
+For MySQL, see [Database](../configuration/database.md).
 
-## 4. Use no jogo
+## 4. Use It In Game
 
-No Minecraft:
+In Minecraft:
 
 ```text
 /verificar
 ```
 
-No Discord:
+In Discord:
 
 ```text
 /vincular codigo: ABC123
 ```
 
-Ou use o painel com botao/modal, se estiver ativado.
+You can also use the Discord panel with button/modal if enabled.

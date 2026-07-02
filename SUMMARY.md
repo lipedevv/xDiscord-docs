@@ -4,30 +4,30 @@
 
 ## Getting Started
 
-* [Instalacao](getting-started/installation.md)
-* [Configuracao rapida](getting-started/quickstart.md)
+* [Installation](getting-started/installation.md)
+* [Quickstart](getting-started/quickstart.md)
 
-## Configuracao
+## Configuration
 
-* [Arquivos e locales](configuration/locales.md)
-* [Bot Discord](configuration/discord-bot.md)
-* [Banco de dados](configuration/database.md)
-* [Mensagens](configuration/messages.md)
+* [Files And Locales](configuration/locales.md)
+* [Discord Bot](configuration/discord-bot.md)
+* [Database](configuration/database.md)
+* [Messages](configuration/messages.md)
 
 ## Features
 
-* [Vinculacao de contas](features/linking.md)
-* [Painel no Discord](features/discord-panel.md)
-* [Recompensas](features/rewards.md)
-* [Sync VIP e nickname](features/vip-sync.md)
-* [Bloqueio de comandos](features/command-blocking.md)
-* [Ranking no Discord](features/ranking.md)
-* [Console no Discord](features/discord-console.md)
+* [Account Linking](features/linking.md)
+* [Discord Panel](features/discord-panel.md)
+* [Rewards](features/rewards.md)
+* [VIP Sync And Nickname](features/vip-sync.md)
+* [Command Blocking](features/command-blocking.md)
+* [Discord Ranking](features/ranking.md)
+* [Discord Console](features/discord-console.md)
 
-## Referencia
+## Reference
 
-* [Comandos](reference/commands.md)
-* [Permissoes](reference/permissions.md)
+* [Commands](reference/commands.md)
+* [Permissions](reference/permissions.md)
 * [Placeholders](reference/placeholders.md)
-* [API para desenvolvedores](reference/developers.md)
-* [Problemas comuns](reference/troubleshooting.md)
+* [Developer API](reference/developers.md)
+* [Troubleshooting](reference/troubleshooting.md)

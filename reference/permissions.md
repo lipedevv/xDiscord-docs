@@ -2,7 +2,7 @@
 icon: key
 ---
 
-# Permissoes
+# Permissions
 
 ```text
 xdiscord.usar
@@ -14,7 +14,7 @@ xdiscord.bypasscooldown
 xdiscord.bypasslink
 ```
 
-## Bypass de comandos bloqueados
+## Command Blocking Bypass
 
 ```yaml
 blocked-commands-if-not-linked:

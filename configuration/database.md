@@ -2,17 +2,17 @@
 icon: database
 ---
 
-# Banco de dados
+# Database
 
-Arquivo:
+File:
 
 ```text
-plugins/xDiscord/locales/<idioma>/database.yml
+plugins/xDiscord/locales/<locale>/database.yml
 ```
 
 ## SQLite
 
-Padrao:
+Default:
 
 ```yaml
 database:
@@ -21,7 +21,7 @@ database:
     file: "data/database.db"
 ```
 
-O arquivo fica em:
+The file is stored at:
 
 ```text
 plugins/xDiscord/data/database.db
@@ -42,9 +42,9 @@ database:
     pool-size: 10
 ```
 
-## Tabelas
+## Tables
 
-O plugin cria automaticamente:
+xDiscord creates these tables automatically:
 
 ```text
 xdiscord_links
@@ -52,4 +52,4 @@ xdiscord_history
 xdiscord_rewards
 ```
 
-`xdiscord_rewards` guarda se a recompensa manual/automatica ja foi resgatada.
+`xdiscord_rewards` stores whether the automatic/manual reward has already been claimed.

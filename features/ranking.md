@@ -2,9 +2,9 @@
 icon: ranking-star
 ---
 
-# Ranking no Discord
+# Discord Ranking
 
-Comando:
+Command:
 
 ```text
 /top tipo: tempo
@@ -12,12 +12,12 @@ Comando:
 /top tipo: pesca
 ```
 
-## Configuracao
+## Configuration
 
-Arquivo:
+File:
 
 ```text
-plugins/xDiscord/locales/<idioma>/discord.yml
+plugins/xDiscord/locales/<locale>/discord.yml
 ```
 
 ```yaml
@@ -34,10 +34,10 @@ discord:
         placeholder: "%fpesca_pescados%"
 ```
 
-## Tipos
+## Types
 
-* `tempo`: usa estatistica nativa do Minecraft.
-* `money`: usa placeholder configurado.
-* `pesca`: usa placeholder configurado.
+* `tempo`: uses native Minecraft playtime statistics.
+* `money`: uses the configured placeholder.
+* `pesca`: uses the configured placeholder.
 
-Quando o tipo depende de PlaceholderAPI, o ranking usa os jogadores online que possuem valor no placeholder.
+When a type depends on PlaceholderAPI, the ranking uses online players that return a numeric value for the configured placeholder.

@@ -2,15 +2,15 @@
 icon: code
 ---
 
-# API para desenvolvedores
+# Developer API
 
-O xDiscord registra uma API propria.
+xDiscord registers its own public API.
 
 ```java
 XDiscordAPI api = XDiscordProvider.get();
 ```
 
-Exemplo:
+Example:
 
 ```java
 api.links().findByPlayerUuid(player.getUniqueId()).thenAccept(optional -> {
@@ -22,28 +22,28 @@ api.links().findByPlayerUuid(player.getUniqueId()).thenAccept(optional -> {
 
 ## xCore
 
-Plugins novos devem depender de `xCore`:
+New plugins should depend on `xCore`:
 
 ```yaml
 depend:
   - xCore
 ```
 
-O xCore tambem fornece compatibilidade com o nome antigo `fCore`.
+xCore also provides compatibility with the old `fCore` name.
 
-## Mensagens interativas
+## Interactive Messages
 
 ```java
 core.messages().sendInteractive(
     player,
-    "<green>Clique aqui",
-    "<yellow>Copiar comando",
+    "<green>Click here",
+    "<yellow>Copy command",
     "COPY",
     "/vincular ABC123"
 );
 ```
 
-Acoes aceitas:
+Accepted actions:
 
 ```text
 RUN_COMMAND

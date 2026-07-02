@@ -2,22 +2,22 @@
 icon: crown
 ---
 
-# Sync VIP e nickname
+# VIP Sync And Nickname
 
-## Cargo verificado
+## Verified Role
 
 ```yaml
 discord:
-  verified-role-id: "ID_DO_CARGO"
+  verified-role-id: "ROLE_ID"
 ```
 
-Ao vincular, o bot adiciona esse cargo.
+When the account is linked, the bot adds this role.
 
-Ao desvincular, o bot remove esse cargo.
+When the account is unlinked, the bot removes this role.
 
-## VIP sync
+## VIP Sync
 
-Se o jogador tiver grupo/permissao no Minecraft, o bot adiciona cargo correspondente no Discord.
+If the player has a Minecraft group or permission, the bot can add the matching Discord role.
 
 ```yaml
 discord:
@@ -26,18 +26,18 @@ discord:
     groups:
       - minecraft-group: "arcano"
         permission: "group.arcano"
-        discord-role-id: "ID_CARGO_ARCANO"
+        discord-role-id: "ARCANO_ROLE_ID"
       - minecraft-group: "mistico"
         permission: "group.mistico"
-        discord-role-id: "ID_CARGO_MISTICO"
+        discord-role-id: "MISTICO_ROLE_ID"
       - minecraft-group: "epico"
         permission: "group.epico"
-        discord-role-id: "ID_CARGO_EPICO"
+        discord-role-id: "EPICO_ROLE_ID"
 ```
 
-O plugin tenta ler o grupo primario do LuckPerms. Se o jogador estiver online, tambem confere a permissao configurada.
+xDiscord tries to read the primary group from LuckPerms. If the player is online, it also checks the configured permission.
 
-## Nickname sync
+## Nickname Sync
 
 ```yaml
 discord:
@@ -46,10 +46,10 @@ discord:
     format: "{player}"
 ```
 
-Exemplo final:
+Example result:
 
 ```text
 Lipe_Tato
 ```
 
-O bot precisa de `Manage Nicknames`.
+The bot needs `Manage Nicknames`.

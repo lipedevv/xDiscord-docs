@@ -2,9 +2,9 @@
 icon: link
 ---
 
-# Vinculacao de contas
+# Account Linking
 
-O fluxo principal usa codigo temporario.
+The main flow uses a temporary code.
 
 ## Minecraft
 
@@ -12,7 +12,7 @@ O fluxo principal usa codigo temporario.
 /verificar
 ```
 
-O jogador abre a GUI, clica em vincular e recebe um codigo.
+The player opens the GUI, clicks the link item, and receives a code.
 
 ## Discord
 
@@ -20,19 +20,19 @@ O jogador abre a GUI, clica em vincular e recebe um codigo.
 /vincular codigo: ABC123
 ```
 
-Quando o codigo e valido:
+When the code is valid:
 
-* O vinculo e salvo no banco.
-* O cargo verificado pode ser aplicado.
-* Recompensas podem ser executadas.
-* VIP sync pode aplicar cargos.
-* Nick sync pode trocar o apelido no Discord.
+* The link is saved in the database.
+* The verified role can be applied.
+* Rewards can be executed or made available for manual claiming.
+* VIP sync can apply Discord roles.
+* Nickname sync can change the member nickname in Discord.
 
-## Desvincular
+## Unlinking
 
-Pela GUI, se o jogador ja estiver vinculado, o item principal pode abrir a confirmacao de desvinculo.
+In the GUI, if the player is already linked, the main item can open the unlink confirmation menu.
 
-Admin:
+Admin commands:
 
 ```text
 /verificar desvincular <player>

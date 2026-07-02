@@ -2,28 +2,28 @@
 icon: square-cursor
 ---
 
-# Painel no Discord
+# Discord Panel
 
-O painel permite vincular pelo Discord.
+The Discord panel allows players to start linking from Discord.
 
-Fluxo:
+Flow:
 
-1. O bot envia/edita um embed em um canal.
-2. O usuario clica no botao.
-3. Um modal pede o nick do Minecraft.
-4. O Minecraft recebe uma solicitacao.
-5. O jogador aceita com clique no chat ou `/vincular aceitar`.
+1. The bot sends or edits an embed in a channel.
+2. The user clicks the button.
+3. A modal asks for the Minecraft username.
+4. Minecraft receives a link request.
+5. The player accepts by clicking the chat message or running `/vincular aceitar`.
 
-## Configuracao
+## Configuration
 
 ```yaml
 discord:
   link-panel:
     enabled: true
-    channel-id: "ID_DO_CANAL"
+    channel-id: "CHANNEL_ID"
     message-id: ""
     button-id: "xdiscord_link_open"
-    button-label: "Vincular conta"
+    button-label: "Link account"
 ```
 
-`message-id` e preenchido automaticamente. Ao reiniciar ou usar reload, o bot edita a mensagem existente em vez de mandar outra.
+`message-id` is filled automatically. On restart or reload, the bot edits the existing message instead of sending a duplicate.

@@ -2,15 +2,15 @@
 icon: terminal
 ---
 
-# Console no Discord
+# Discord Console
 
-O xDiscord pode enviar logs do servidor para um canal e executar comandos enviados nesse canal.
+xDiscord can send server logs to a Discord channel and execute commands sent in that channel.
 
 ```yaml
 discord:
   console:
     enabled: true
-    channel-id: "ID_DO_CANAL"
+    channel-id: "CHANNEL_ID"
     min-level: "INFO"
     flush-interval-seconds: 5
     max-lines-per-message: 20
@@ -21,8 +21,8 @@ discord:
       allowed-role-ids: []
 ```
 
-## Seguranca
+## Security
 
-Use `allowed-role-ids` para limitar quem pode executar comandos.
+Use `allowed-role-ids` to restrict who can execute commands.
 
-Se ficar vazio, qualquer pessoa com acesso ao canal pode executar comandos, dependendo da configuracao do canal.
+If it is empty, anyone with access to the channel may be able to execute commands, depending on the channel permissions.

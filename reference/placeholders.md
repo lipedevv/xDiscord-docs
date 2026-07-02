@@ -6,7 +6,7 @@ icon: brackets-curly
 
 ## PlaceholderAPI
 
-Se PlaceholderAPI estiver instalado:
+If PlaceholderAPI is installed:
 
 ```text
 %xdiscord_status%
@@ -15,9 +15,9 @@ Se PlaceholderAPI estiver instalado:
 %xdiscord_linked_at%
 ```
 
-## Placeholders internos
+## Internal Placeholders
 
-Usados em mensagens e comandos:
+Used in messages and commands:
 
 ```text
 {player}
@@ -30,7 +30,7 @@ Usados em mensagens e comandos:
 {linked_at}
 ```
 
-## Recompensas
+## Rewards
 
 ```text
 {player}

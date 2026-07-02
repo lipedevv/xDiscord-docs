@@ -2,46 +2,46 @@
 icon: triangle-alert
 ---
 
-# Problemas comuns
+# Troubleshooting
 
-## xDiscord nao inicia
+## xDiscord Does Not Start
 
-Confira se `xCore.jar` esta na pasta `plugins/`.
+Make sure `xCore.jar` is in the `plugins/` folder.
 
-## Bot fica pensando
+## The Bot Keeps Thinking
 
-Verifique o token, `guild-id` e permissoes do bot. O plugin usa `deferReply` e sempre tenta finalizar a resposta, mas erro de token/guild/permissao pode impedir interacoes.
+Check the token, `guild-id`, and bot permissions. xDiscord uses `deferReply` and always tries to finish the response, but invalid token, invalid guild, or missing permissions can break interactions.
 
-## Cargo nao e adicionado
+## Role Is Not Added
 
-Confira:
+Check:
 
 * `verified-role-id`
-* `discord-role-id` dos VIPs
-* permissao `Manage Roles`
-* hierarquia dos cargos no Discord
+* VIP `discord-role-id`
+* `Manage Roles` permission
+* Discord role hierarchy
 
-O cargo do bot precisa estar acima dos cargos que ele vai gerenciar.
+The bot role must be above every role it will manage.
 
-## Nick nao muda
+## Nickname Does Not Change
 
-Confira:
+Check:
 
 * `discord.nickname-sync.enabled`
-* permissao `Manage Nicknames`
-* hierarquia de cargos
+* `Manage Nicknames` permission
+* Discord role hierarchy
 
-## Painel duplica
+## Panel Duplicates
 
-Confira `discord.link-panel.message-id`. O xDiscord salva esse ID automaticamente. Se apagar o ID, ele tenta encontrar uma mensagem antiga do bot no canal; se nao achar, envia uma nova.
+Check `discord.link-panel.message-id`. xDiscord saves this ID automatically. If you clear it, the plugin will try to find an old bot message in the channel; if it cannot find one, it sends a new message.
 
-## MySQL nao conecta
+## MySQL Does Not Connect
 
-Confira:
+Check:
 
 * host
-* porta
+* port
 * database
-* usuario/senha
+* username/password
 * firewall
 * `useSSL`

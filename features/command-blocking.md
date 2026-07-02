@@ -2,14 +2,14 @@
 icon: shield-x
 ---
 
-# Bloqueio de comandos
+# Command Blocking
 
-Voce pode bloquear comandos para quem nao esta vinculado.
+You can block commands for players who are not linked.
 
-Arquivo:
+File:
 
 ```text
-plugins/xDiscord/locales/<idioma>/config.yml
+plugins/xDiscord/locales/<locale>/config.yml
 ```
 
 ```yaml
@@ -22,10 +22,10 @@ blocked-commands-if-not-linked:
     - "money pay"
 ```
 
-O bloqueio usa prefixo. Se configurar `money pay`, apenas comandos que comecam com `money pay` serao bloqueados.
+The match is prefix-based. If you configure `money pay`, only commands starting with `money pay` will be blocked.
 
-Mensagem:
+Message:
 
 ```yaml
-command-blocked-not-linked: "{prefix}&cVoce precisa vincular sua conta do Discord para usar esse comando."
+command-blocked-not-linked: "{prefix}&cYou must link your Discord account before using this command."
 ```

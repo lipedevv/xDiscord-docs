@@ -2,40 +2,40 @@
 icon: message
 ---
 
-# Mensagens
+# Messages
 
-Arquivo:
+File:
 
 ```text
-plugins/xDiscord/locales/<idioma>/messages.yml
+plugins/xDiscord/locales/<locale>/messages.yml
 ```
 
-As mensagens suportam:
+Messages support:
 
-* Cores legacy com `&`.
-* Hex e MiniMessage quando enviado pelo xCore.
-* Placeholders internos.
-* PlaceholderAPI, se instalada.
-* Mensagens em lista.
+* Legacy colors with `&`.
+* Hex and MiniMessage when sent through xCore.
+* Internal placeholders.
+* PlaceholderAPI, if installed.
+* Multi-line message lists.
 
-Exemplo:
+Example:
 
 ```yaml
 prefix: "&a&lxDiscord &8» "
 
-reward-claimed: "{prefix}&aRecompensa resgatada com sucesso."
-command-blocked-not-linked: "{prefix}&cVoce precisa vincular sua conta do Discord para usar esse comando."
+reward-claimed: "{prefix}&aReward claimed successfully."
+command-blocked-not-linked: "{prefix}&cYou must link your Discord account before using this command."
 ```
 
-## Hover e click
+## Hover And Click
 
-O xCore possui API para mensagens interativas:
+xCore exposes an API for interactive messages:
 
 ```java
 core.messages().sendInteractive(
     player,
-    "<green>Clique para copiar",
-    "<yellow>Copiar comando",
+    "<green>Click to copy",
+    "<yellow>Copy command",
     "COPY",
     "/vincular ABC123"
 );

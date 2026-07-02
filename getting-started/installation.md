@@ -2,19 +2,19 @@
 icon: download
 ---
 
-# Instalacao
+# Installation
 
-## Requisitos
+## Requirements
 
-* Servidor Paper/Spigot moderno.
-* Java 21 ou superior.
-* `xCore.jar` instalado.
-* `xDiscord.jar` instalado.
-* Um bot criado no Discord Developer Portal.
+* Modern Paper/Spigot server.
+* Java 21 or newer.
+* `xCore.jar` installed.
+* `xDiscord.jar` installed.
+* A Discord bot created in the Discord Developer Portal.
 
-## Arquivos
+## Files
 
-Coloque os jars na pasta `plugins/`:
+Place both jars in your server `plugins/` folder:
 
 ```text
 plugins/
@@ -22,18 +22,18 @@ plugins/
   xDiscord.jar
 ```
 
-O `xDiscord` depende obrigatoriamente de `xCore`:
+`xDiscord` requires `xCore`:
 
 ```yaml
 depend:
   - xCore
 ```
 
-O `xCore` tambem declara compatibilidade com o nome antigo `fCore`, entao plugins antigos podem continuar funcionando enquanto voce migra.
+`xCore` also provides compatibility with the old `fCore` plugin name, so older plugins can keep working while you migrate.
 
-## Primeiro start
+## First Start
 
-Inicie o servidor uma vez. O plugin vai criar:
+Start the server once. xDiscord will create:
 
 ```text
 plugins/xDiscord/locales/en_US/
@@ -41,4 +41,4 @@ plugins/xDiscord/locales/pt_BR/
 plugins/xDiscord/data/
 ```
 
-Depois configure o idioma, Discord e banco de dados.
+Then configure the locale, Discord bot, and database.

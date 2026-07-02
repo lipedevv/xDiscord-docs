@@ -2,43 +2,43 @@
 icon: discord
 ---
 
-# Bot Discord
+# Discord Bot
 
-Arquivo:
+File:
 
 ```text
-plugins/xDiscord/locales/<idioma>/discord.yml
+plugins/xDiscord/locales/<locale>/discord.yml
 ```
 
-## Configuracao principal
+## Main Configuration
 
 ```yaml
 discord:
   enabled: true
   token: ""
   guild-id: ""
-  invite-url: "https://discord.gg/seuservidor"
+  invite-url: "https://discord.gg/yourserver"
   verified-role-id: ""
-  bot-status: "Use /verificar no servidor"
+  bot-status: "Use /verificar in the server"
   command-name: "vincular"
 ```
 
-## Criando o bot
+## Creating The Bot
 
-1. Acesse o Discord Developer Portal.
-2. Crie uma aplicacao.
-3. Abra a aba Bot.
-4. Crie/copiei o token.
-5. Ative as intents necessarias se forem solicitadas.
-6. Convide o bot com `applications.commands`.
-7. Se usar cargo verificado, de permissao `Manage Roles`.
+1. Open the Discord Developer Portal.
+2. Create an application.
+3. Open the `Bot` tab.
+4. Create or copy the bot token.
+5. Enable required intents if Discord asks for them.
+6. Invite the bot with `applications.commands`.
+7. If you use roles, give the bot `Manage Roles`.
 
-## Permissoes do bot
+## Recommended Bot Permissions
 
-Para usar todos os recursos:
+For all features:
 
 * `applications.commands`
 * `Manage Roles`
 * `Manage Nicknames`
-* Permissao para ler/enviar mensagens no canal do painel.
-* O cargo do bot deve estar acima dos cargos que ele vai adicionar.
+* Permission to read and send messages in the panel channel.
+* The bot role must be above every role it will manage.

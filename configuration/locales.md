@@ -2,11 +2,11 @@
 icon: language
 ---
 
-# Arquivos e locales
+# Files And Locales
 
-O xDiscord separa as configuracoes por idioma.
+xDiscord separates configuration files by locale.
 
-Estrutura padrao:
+Default structure:
 
 ```text
 plugins/xDiscord/locales/en_US/config.yml
@@ -24,9 +24,9 @@ plugins/xDiscord/locales/pt_BR/messages.yml
 plugins/xDiscord/locales/pt_BR/rewards.yml
 ```
 
-## Idioma ativo
+## Active Locale
 
-O idioma ativo e lido em:
+The active locale is read from:
 
 ```text
 plugins/xDiscord/locales/en_US/config.yml
@@ -34,14 +34,16 @@ plugins/xDiscord/locales/en_US/config.yml
 
 ```yaml
 settings:
-  language: "pt_BR"
+  language: "en_US"
 ```
 
-## Atualizacao automatica
+Change it to `pt_BR` if you want the plugin to use the Portuguese files.
 
-Quando uma versao nova adiciona chaves, o plugin aplica defaults automaticamente sem apagar suas configuracoes atuais.
+## Automatic Updates
 
-Se alguma chave nova nao aparecer, use:
+When a new version adds configuration keys, xDiscord applies defaults automatically without deleting your existing files.
+
+If new keys do not appear immediately, run:
 
 ```text
 /xdiscord reload

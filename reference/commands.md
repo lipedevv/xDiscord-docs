@@ -2,7 +2,7 @@
 icon: terminal
 ---
 
-# Comandos
+# Commands
 
 ## Minecraft
 
@@ -18,14 +18,14 @@ icon: terminal
 /vincular recusar
 ```
 
-`/verificar` e `/vincular` abrem a GUI quando usados sem argumentos.
+`/verificar` and `/vincular` open the GUI when used without arguments.
 
 ## Discord
 
 ```text
-/vincular codigo:<codigo>
-/jogador user:@usuario
+/vincular codigo:<code>
+/jogador user:@user
 /top tipo:<money|tempo|pesca>
 ```
 
-Comandos customizados podem ser criados em `discord.yml`.
+Custom commands can be created in `discord.yml`.

@@ -2,15 +2,15 @@
 icon: gift
 ---
 
-# Recompensas
+# Rewards
 
-Arquivo:
+File:
 
 ```text
-plugins/xDiscord/locales/<idioma>/rewards.yml
+plugins/xDiscord/locales/<locale>/rewards.yml
 ```
 
-## Modo automatico
+## Automatic Mode
 
 ```yaml
 rewards:
@@ -18,13 +18,13 @@ rewards:
   mode: "AUTO"
   only-first-link: true
   commands:
-    - "lp user {player} permission set servidor.vinculado true"
+    - "lp user {player} permission set server.linked true"
     - "money give {player} 5000"
 ```
 
-Nesse modo, os comandos rodam assim que a conta e vinculada.
+In this mode, commands run as soon as the account is linked.
 
-## Modo manual
+## Manual Mode
 
 ```yaml
 rewards:
@@ -37,11 +37,11 @@ rewards:
       head:
         type: "URL"
         value: "http://textures.minecraft.net/texture/5b85e29f29ec9a90e482ea5b8391bcb4560bbae0dcd15d7ce1d86016b4356e98"
-      name: "&a&lRESGATAR RECOMPENSA"
+      name: "&a&lCLAIM REWARD"
 ```
 
-O jogador precisa abrir `/vincular` e clicar no item da recompensa.
+The player must open `/vincular` and click the reward item.
 
-## Anti-duplicacao
+## Duplicate Protection
 
-O plugin salva o resgate em `xdiscord_rewards`, impedindo resgate duplicado.
+xDiscord stores reward claims in `xdiscord_rewards`, preventing duplicate claims.
