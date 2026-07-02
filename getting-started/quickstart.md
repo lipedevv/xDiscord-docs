@@ -1,23 +1,72 @@
 ---
-icon: bullseye-arrow
+icon: rocket
 ---
 
-# Quickstart
+# Configuracao rapida
 
-<figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-hero.png" alt=""><figcaption></figcaption></figure>
+Depois de instalar `xCore.jar` e `xDiscord.jar`, inicie o servidor uma vez para gerar os arquivos.
 
-Beautiful documentation starts with the content you create — and GitBook makes it easy to get started with any pre-existing content.
+## 1. Escolha o idioma
 
-{% hint style="info" %}
-Want to learn about writing content from scratch? Head to the [Basics](https://github.com/GitbookIO/onboarding-template/blob/main/getting-started/broken-reference/README.md) section to learn more.
-{% endhint %}
+O idioma padrao e `en_US`. Para usar portugues:
 
-### Import
+```yaml
+settings:
+  language: "pt_BR"
+```
 
-GitBook supports importing content from many popular writing tools and formats. If your content already exists, you can upload a file or group of files to be imported.
+Arquivo:
 
-<div data-full-width="false"><figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-import.png" alt=""><figcaption></figcaption></figure></div>
+```text
+plugins/xDiscord/locales/en_US/config.yml
+```
 
-### Sync a repository
+Reinicie ou use `/xdiscord reload`.
 
-GitBook also allows you to set up a bi-directional sync with an existing repository on GitHub or GitLab. Setting up Git Sync allows you and your team to write content in GitBook or in code, and never have to worry about your content becoming out of sync.
+## 2. Configure o bot
+
+Arquivo:
+
+```text
+plugins/xDiscord/locales/pt_BR/discord.yml
+```
+
+Campos principais:
+
+```yaml
+discord:
+  enabled: true
+  token: "TOKEN_DO_BOT"
+  guild-id: "ID_DO_SERVIDOR"
+  invite-url: "https://discord.gg/seuservidor"
+  verified-role-id: "ID_DO_CARGO_VERIFICADO"
+```
+
+## 3. Configure o banco
+
+SQLite vem pronto por padrao:
+
+```yaml
+database:
+  type: "sqlite"
+  sqlite:
+    file: "data/database.db"
+```
+
+Para MySQL, veja [Banco de dados](../configuration/database.md).
+
+## 4. Use no jogo
+
+No Minecraft:
+
+```text
+/verificar
+```
+
+No Discord:
+
+```text
+/vincular codigo: ABC123
+```
+
+Ou use o painel com botao/modal, se estiver ativado.

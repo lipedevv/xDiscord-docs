@@ -1,6 +1,6 @@
 ---
-icon: hand-wave
-cover: https://gitbookio.github.io/onboarding-template-images/header.png
+icon: link
+cover: ./Logo%20xDiscord.png
 coverY: 0
 layout:
   width: default
@@ -10,27 +10,36 @@ layout:
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
     visible: true
   pagination:
     visible: true
-  metadata:
-    visible: true
-  tags:
-    visible: true
-  actions:
-    visible: true
 ---
 
-# Welcome
+# xDiscord
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+**xDiscord** e um plugin de vinculacao Minecraft + Discord feito para servidores Paper/Spigot modernos. Ele depende do **xCore** e centraliza verificacao de conta, bot Discord, recompensas, painel com botao/modal, console no Discord, comandos customizados, bloqueio de comandos para nao vinculados e sincronizacao de cargos.
 
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+## Recursos principais
 
-### Jump right in
+* Vinculacao por codigo usando `/verificar` no Minecraft e `/vincular` no Discord.
+* Vinculacao por painel no Discord com botao, modal e solicitacao para aceitar no Minecraft.
+* GUI editavel com item de vincular, item de conta vinculada e confirmacao de desvinculo.
+* Recompensas em modo automatico ou manual por item na GUI.
+* SQLite e MySQL usando HikariCP.
+* Sync de cargo verificado e cargos VIP por grupo LuckPerms/permissao.
+* Nick automatico no Discord ao vincular.
+* Bloqueio de comandos para jogadores nao vinculados.
+* Comandos customizados no Discord.
+* Ranking `/top` no Discord.
+* Locales em `plugins/xDiscord/locales/<idioma>/`.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td>Create your first site</td><td></td><td></td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td><a href="https://app.gitbook.com/s/KIxiJYU52XvBVSfpJ1Bf/basics">Basics</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td></td><td></td><td><a href="getting-started/publish-your-docs.md">publish-your-docs.md</a></td></tr></tbody></table>
+## Comece por aqui
+
+* [Instalacao](getting-started/installation.md)
+* [Configuracao rapida](getting-started/quickstart.md)
+* [Arquivos e locales](configuration/locales.md)
+* [Bot Discord](configuration/discord-bot.md)
