@@ -1,6 +1,6 @@
 ---
 icon: link
-cover: ./Logo%20xDiscord.png
+cover: .gitbook/assets/Logo xDiscord.png
 coverY: 0
 layout:
   width: default
@@ -16,6 +16,12 @@ layout:
   outline:
     visible: true
   pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
     visible: true
 ---
 
