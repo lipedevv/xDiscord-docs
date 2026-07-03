@@ -31,14 +31,17 @@ layout:
 
 ## Main Features
 
-* Account linking with `/verificar` in Minecraft and `/vincular` in Discord.
+* Account linking with `/verify` in Minecraft and `/link` in Discord.
 * Discord linking panel with button, modal, and in-game accept/deny request.
 * Fully configurable GUI for linking, linked account status, unlink confirmation, and reward claiming.
 * Rewards in automatic or manual mode.
 * SQLite and MySQL support with HikariCP.
 * Verified role and VIP role synchronization from LuckPerms groups or permissions.
 * Automatic Discord nickname synchronization.
-* Command blocking for players who are not linked.
+* Command blocking and world restrictions for players who are not linked.
+* Optional Discord whitelist for already linked players, disabled by default.
+* Persistent audit logs for link, unlink, reward, command block, world block, and whitelist events.
+* `/xdiscord doctor` diagnostics for setup checks.
 * Custom Discord slash commands.
 * Discord ranking command `/top`.
 * Localized configuration files under `plugins/xDiscord/locales/<locale>/`.

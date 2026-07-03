@@ -7,25 +7,26 @@ icon: terminal
 ## Minecraft
 
 ```text
-/verificar
-/vincular
+/verify
+/link
 /discord
 /xdiscord
 /xdiscord reload
+/xdiscord doctor
 /xdiscord info <player>
-/xdiscord desvincular <player>
-/vincular aceitar
-/vincular recusar
+/xdiscord unlink <player>
+/link accept
+/link deny
 ```
 
-`/verificar` and `/vincular` open the GUI when used without arguments.
+`/verify` and `/link` open the GUI when used without arguments. Legacy aliases such as `/verificar` and `/vincular` can remain available for compatibility.
 
 ## Discord
 
 ```text
-/vincular codigo:<code>
-/jogador user:@user
-/top tipo:<money|tempo|pesca>
+/link code:<code>
+/player user:@user
+/top type:<money|time|fishing>
 ```
 
 Custom commands can be created in `discord.yml`.

@@ -12,7 +12,7 @@ Flow:
 2. The user clicks the button.
 3. A modal asks for the Minecraft username.
 4. Minecraft receives a link request.
-5. The player accepts by clicking the chat message or running `/vincular aceitar`.
+5. The player accepts by clicking the chat message or running `/link accept`.
 
 ## Configuration
 

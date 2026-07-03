@@ -9,7 +9,7 @@ The main flow uses a temporary code.
 ## Minecraft
 
 ```text
-/verificar
+/verify
 ```
 
 The player opens the GUI, clicks the link item, and receives a code.
@@ -17,7 +17,7 @@ The player opens the GUI, clicks the link item, and receives a code.
 ## Discord
 
 ```text
-/vincular codigo: ABC123
+/link code: ABC123
 ```
 
 When the code is valid:
@@ -35,6 +35,6 @@ In the GUI, if the player is already linked, the main item can open the unlink c
 Admin commands:
 
 ```text
-/verificar desvincular <player>
-/xdiscord desvincular <player>
+/verify unlink <player>
+/xdiscord unlink <player>
 ```

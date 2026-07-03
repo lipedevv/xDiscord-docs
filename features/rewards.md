@@ -40,7 +40,7 @@ rewards:
       name: "&a&lCLAIM REWARD"
 ```
 
-The player must open `/vincular` and click the reward item.
+The player must open `/link` and click the reward item.
 
 ## Duplicate Protection
 

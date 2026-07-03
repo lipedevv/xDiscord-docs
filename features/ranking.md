@@ -7,9 +7,9 @@ icon: ranking-star
 Command:
 
 ```text
-/top tipo: tempo
-/top tipo: money
-/top tipo: pesca
+/top type: time
+/top type: money
+/top type: fishing
 ```
 
 ## Configuration
@@ -17,7 +17,7 @@ Command:
 File:
 
 ```text
-plugins/xDiscord/locales/<locale>/discord.yml
+plugins/xDiscord/discord.yml
 ```
 
 ```yaml
@@ -25,19 +25,21 @@ discord:
   top-command:
     enabled: true
     name: "top"
-    option-name: "tipo"
+    option-name: "type"
     limit: 10
     types:
       money:
         placeholder: "%vault_eco_balance%"
-      pesca:
+      fishing:
         placeholder: "%fpesca_pescados%"
 ```
 
 ## Types
 
-* `tempo`: uses native Minecraft playtime statistics.
+* `time`: uses native Minecraft playtime statistics.
 * `money`: uses the configured placeholder.
-* `pesca`: uses the configured placeholder.
+* `fishing`: uses the configured placeholder.
+
+Legacy aliases such as `tempo` and `pesca` are still accepted by the handler.
 
 When a type depends on PlaceholderAPI, the ranking uses online players that return a numeric value for the configured placeholder.

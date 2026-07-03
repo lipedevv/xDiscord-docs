@@ -7,7 +7,7 @@ icon: discord
 File:
 
 ```text
-plugins/xDiscord/locales/<locale>/discord.yml
+plugins/xDiscord/discord.yml
 ```
 
 ## Main Configuration
@@ -19,8 +19,14 @@ discord:
   guild-id: ""
   invite-url: "https://discord.gg/yourserver"
   verified-role-id: ""
-  bot-status: "Use /verificar in the server"
-  command-name: "vincular"
+  command-name: "link"
+  code-option-name: "code"
+```
+
+Texts such as bot status, command descriptions, modal labels, panel embeds, and command responses are configured in:
+
+```text
+plugins/xDiscord/locales/<locale>/messages.yml
 ```
 
 ## Creating The Bot

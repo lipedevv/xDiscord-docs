@@ -39,7 +39,7 @@ core.messages().sendInteractive(
     "<green>Click here",
     "<yellow>Copy command",
     "COPY",
-    "/vincular ABC123"
+    "/link ABC123"
 );
 ```
 

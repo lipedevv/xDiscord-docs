@@ -9,7 +9,7 @@ You can block commands for players who are not linked.
 File:
 
 ```text
-plugins/xDiscord/locales/<locale>/config.yml
+plugins/xDiscord/config.yml
 ```
 
 ```yaml

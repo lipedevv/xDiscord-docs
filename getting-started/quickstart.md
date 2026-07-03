@@ -8,17 +8,17 @@ After installing `xCore.jar` and `xDiscord.jar`, start the server once to genera
 
 ## 1. Choose The Locale
 
-The default locale is `en_US`. To use Brazilian Portuguese:
+The default locale is `pt_BR`. To use English:
 
 ```yaml
 settings:
-  language: "pt_BR"
+  language: "en_US"
 ```
 
 File:
 
 ```text
-plugins/xDiscord/locales/en_US/config.yml
+plugins/xDiscord/config.yml
 ```
 
 Restart the server or run `/xdiscord reload`.
@@ -28,7 +28,7 @@ Restart the server or run `/xdiscord reload`.
 File:
 
 ```text
-plugins/xDiscord/locales/en_US/discord.yml
+plugins/xDiscord/discord.yml
 ```
 
 Main fields:
@@ -60,13 +60,13 @@ For MySQL, see [Database](../configuration/database.md).
 In Minecraft:
 
 ```text
-/verificar
+/verify
 ```
 
 In Discord:
 
 ```text
-/vincular codigo: ABC123
+/link code: ABC123
 ```
 
 You can also use the Discord panel with button/modal if enabled.

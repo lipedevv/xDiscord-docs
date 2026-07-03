@@ -9,6 +9,7 @@ xdiscord.usar
 xdiscord.admin
 xdiscord.reload
 xdiscord.info
+xdiscord.unlink
 xdiscord.desvincular
 xdiscord.bypasscooldown
 xdiscord.bypasslink

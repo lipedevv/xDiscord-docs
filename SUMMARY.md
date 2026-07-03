@@ -21,6 +21,8 @@
 * [Rewards](features/rewards.md)
 * [VIP Sync And Nickname](features/vip-sync.md)
 * [Command Blocking](features/command-blocking.md)
+* [Access Control](features/access-control.md)
+* [Audit Logs](features/audit-logs.md)
 * [Discord Ranking](features/ranking.md)
 * [Discord Console](features/discord-console.md)
 
@@ -29,5 +31,7 @@
 * [Commands](reference/commands.md)
 * [Permissions](reference/permissions.md)
 * [Placeholders](reference/placeholders.md)
+* [xCore GUI And Items](reference/xcore-gui.md)
 * [Developer API](reference/developers.md)
 * [Troubleshooting](reference/troubleshooting.md)
+* [Doctor](reference/doctor.md)
